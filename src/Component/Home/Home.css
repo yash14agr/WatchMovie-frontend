@@ -1,0 +1,5 @@
+.MainContiner {
+    height: 100vw;
+    background-color: black;
+    /* overflow-y: scroll; */
+}

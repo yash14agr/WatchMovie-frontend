@@ -1,0 +1,148 @@
+.signin-container {
+    margin-top: 1rem;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+}
+
+
+
+
+.sign-up-form {
+    /* background-color: rgba(255, 255, 255, 0.13); */
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    width: 20%;
+    min-width: 10rem;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(150, 148, 154, 0.6);
+    padding: 15px 15px;
+}
+
+.sign-up-form * {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    outline: none;
+    border: none;
+}
+
+.input-tag {
+    background-color: #080710;
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid rgba(193, 173, 173, 0.81);
+    margin-top: 20px;
+    font-weight: 300;
+    padding: 5px 10px;
+}
+
+.checkValidation {
+    color: red;
+    font-size: small;
+    margin-bottom: 1px;
+
+}
+
+.input-tag::placeholder {
+    color: #e5e5e5;
+}
+
+
+.btn-signup {
+    margin-top: 10px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 7px 0;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-signup:hover {
+    font-size: 1rem;
+    color: black;
+}
+
+.google {
+    background-color: rgba(255, 255, 255, 0.27);
+    margin-top: 10px;
+    width: 100%;
+    padding: 7px 0;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #e5e5e5;
+}
+
+.google:hover {
+    font-size: 1rem;
+    color: #e5e5e56e;
+}
+
+.success-msg {
+    color: green;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+}
+
+.signUp-head {
+
+    color: #e5e5e5;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.sign-up-Link {
+    text-decoration: none;
+    color: #e5e5e5;
+    margin: 5px;
+    margin-top: 20px;
+    border-bottom: none;
+    transition: color 1s;
+}
+
+.sign-up-Link:hover {
+    /* border-bottom:1px solid gray ; */
+    color: rgba(153, 153, 234, 0.99)
+}
+
+@media screen and (min-width: 320px) and (max-width:425px) {
+    .input-tag {
+        font-size: .8rem;
+    }
+
+    .sign-up-Link {
+        font-size: .9rem;
+        margin: 5px;
+        margin-top: 15px;
+    }
+
+    .signUp-head,
+    .success-msg {
+        font-size: 20px;
+    }
+
+    .google,
+    .btn-signup {
+        font-size: .8rem;
+    }
+
+    .btn-signup:hover {
+        font-size: .9rem;
+        color: black;
+    }
+
+    .google:hover {
+        font-size: .9rem;
+        color: #e5e5e56e;
+    }
+}

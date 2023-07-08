@@ -1,0 +1,93 @@
+.ShowDetailClass {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: gray;
+}
+
+.DetailClass1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2rem;
+    box-shadow: 1px 1px 5px gray;
+    padding: 1.2rem;
+}
+
+.DetailClass2 {
+    width: 100%;
+    font-size: 1rem;
+
+}
+
+.DetailClass2 div {
+    /* margin: 1px; */
+    border-bottom: 1px solid rgba(133, 132, 132, 0.543);
+    width: 100%;
+    padding: .3rem;
+    margin: 0 0 0 .3rem;
+
+}
+
+.DetailClass2 div span,
+.summaryClass div span {
+    color: white;
+}
+
+.summaryClass {
+    padding: 1rem 3rem 1rem 3rem;
+}
+
+.ShowLink {
+    box-shadow: 1px 1px 5px white;
+    padding: .3rem;
+}
+
+.BookTicketImgcontainer {
+    height: 20rem;
+    width: 25rem;
+    box-shadow: 1px 1px 5px gray;
+}
+
+.detailed-image {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+
+}
+
+#book-ticket-container {
+    display: flex;
+
+}
+
+#book-ticket-container .show-details {
+    margin-left: 1rem;
+}
+
+
+.show-details:hover {
+    color: red;
+
+}
+
+@media screen and (min-width: 320px) and (max-width:580px) {
+    .DetailClass1 {
+        margin: 1rem 2rem 1rem 2rem;
+    }
+
+    .DetailClass2 {
+        font-size: 3vw;
+    }
+
+    .BookTicketImgcontainer {
+        height: 15rem;
+        width: 25rem;
+    }
+
+    .summaryClass {
+        padding: rem 2rem .4rem 2rem;
+        font-size: 3vw;
+    }
+
+}

@@ -1,0 +1,189 @@
+.profileMainContainer {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.profileMainContainer h1 {
+    margin: auto;
+    padding: 1rem;
+    margin: 1rem auto;
+    /* border: 1px solid rgb(190, 190, 252); */
+    box-shadow: 0 0 10px rgb(235, 235, 249);
+    border-radius: 1rem;
+}
+
+.profileDetailContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* border: 1px solid gray; */
+    box-shadow: 0 0 10px gray;
+    margin: 1rem;
+    /* align-items: center; */
+    /* padding: 1rem; */
+}
+
+.ProfileDetailSubContainer1,
+.ProfileDetailSubContainer2 {
+    width: 50%;
+}
+
+.ProfileDetailSubContainer1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.ProfileDetailSubContainer2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.ProfileDetailSubContainer1 p {
+    border: 1px solid green;
+    height: fit-content;
+    color: gray;
+    padding: 3rem;
+    background-color: white;
+    border-radius: 70%;
+    font-size: 5rem;
+    margin: 0;
+
+}
+
+.ProfileDetailSubContainer2 .profileDetailbox {
+    display: flex;
+
+
+}
+
+.ProfileDetailSubContainer2 .profileUserData {
+    border: 1px solid gray;
+    padding: 1rem;
+    background-color: rgb(60, 59, 59);
+}
+
+.ProfileDetailSubContainer2 .profileLabels {
+    display: inline-block;
+    width: 6rem;
+    color: rgb(185, 183, 183);
+    box-shadow: 0px 0px 3px rgb(226, 225, 225);
+    margin-right: 1rem;
+    padding: 1rem;
+    background-color: rgb(60, 59, 59);
+}
+
+
+
+
+
+.profileMainContainer h3 {
+    border-bottom: 2px solid gray;
+    width: fit-content;
+    margin: 2rem auto;
+}
+
+
+
+
+.profileMovieContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.profileLogoutbtn {
+    color: black;
+    display: inline-block;
+    /* padding: 1rem 0rem 1rem 0rem; */
+    width: 6rem;
+}
+.profileLogoutbtn:hover{
+    color: red;
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+    transition: box-shadow .5s,color .5s;
+}
+
+@media screen and (min-width:603px) and (max-width:769px) {
+    .profileMainContainer h1 {
+        font-size: 1rem;
+    }
+
+    .ProfileDetailSubContainer1 p {
+        padding: 2rem;
+        font-size: 4.2rem;
+    }
+
+    .ProfileDetailSubContainer2 .profileUserData {
+        padding: .5rem;
+        font-size: .8rem;
+    }
+
+    .ProfileDetailSubContainer2 .profileLabels {
+        width: 4rem;
+        margin-right: 1rem;
+        padding: 1rem;
+        font-size: .8rem;
+    }
+
+}
+
+@media screen and (min-width: 310px) and (max-width:602px) {
+    .profileMainContainer h1 {
+        font-size: .9rem;
+    }
+
+    .ProfileDetailSubContainer1 p {
+        padding: 1.5rem;
+        font-size: 4rem;
+        margin-top: 1rem;
+    }
+
+    .ProfileDetailSubContainer2 {
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ProfileDetailSubContainer2 .profileUserData {
+        display: inline-block;
+        width: 11rem;
+        padding: .4rem;
+        font-size: .8rem;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .ProfileDetailSubContainer2 .profileLabels {
+        width: 4rem;
+        padding: 0rem;
+        border: 0px;
+        background-color: black;
+        box-shadow: 0 0 0;
+        font-size: .8rem;
+        margin: 0;
+    }
+
+    .profileDetailContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profileDetailbox {
+        flex-direction: column;
+        margin: .3rem;
+    }
+
+    .profileLogoutbtn {
+        width: 11rem;
+        margin: 1rem;
+    }
+
+}

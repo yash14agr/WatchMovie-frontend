@@ -1,0 +1,114 @@
+.FormMainContaier {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.BlurForm{
+    filter: blur(1px);
+}
+.formSubMinContainer {
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(150, 148, 154, 0.6);
+}
+
+.FormMainContaier h3 {
+    color: white;
+    border-bottom: 1px solid gray;
+}
+
+.FormContainer {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: gray;
+
+    /* width: 70%; */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.FormSubContainer1,
+.FormSubContainer2 {
+    padding: 1rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.FormContainer label {
+    /* display: table-cell; */
+    display: inline-block;
+    width: 9rem;
+    white-space: nowrap;
+}
+
+.FormContainer p span {
+    padding: 0 5px 0 5px;
+}
+
+.FormContainer p {
+    /* margin: 10px; */
+    color: white;
+}
+
+.FormContainer input {
+    background-color: black;
+    color: gray;
+    outline: none;
+    border: none;
+    display: table-cell;
+    padding: 5px 5px 5px 5px;
+    border-bottom: 1px solid white;
+    /* width: 40%; */
+}
+
+.FormContainer input:focus {
+    outline: none;
+}
+
+.FormContainer input::placeholder {
+    color: white;
+}
+
+.form-btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.form-btn-container button {
+    padding: .5rem .25rem .5rem .25rem;
+    margin: 0 1rem 0 1rem;
+}
+
+.form-btn-container .show-details {
+    width: 6rem;
+    color: black
+}
+
+@media screen and (min-width: 320px) and (max-width:425px) {
+    .FormContainer p {
+        width: 70%;
+        font-size: .8rem;
+    }
+
+    .FormContainer input::placeholder {
+        font-size: .3rem;
+    }
+
+    .FormContainer input,
+    .FormContainer label {
+        width: 100%;
+    }
+}

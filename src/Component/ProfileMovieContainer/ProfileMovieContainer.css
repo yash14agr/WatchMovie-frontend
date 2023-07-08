@@ -1,0 +1,66 @@
+.ProfileMoviesBooked-Container {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    /* align-items: center; */
+    border: 2px solid gray;
+    margin: .4vw;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.ProfileMoviesBooked-subContainer1 {
+    width: fit-content;
+    object-fit: cover;
+    height: 15rem;
+    /* border: 1px solid red; */
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.ProfileMoviesBooked-subContainer1 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+.subCotainerProfile2 {
+    display: inline-block;
+    width: 10rem;
+    /* border:1px solid green; */
+    /* color: red; */
+    padding: 0px;
+    margin: 0px;
+}
+
+.ProfileMoviesBooked-subContainer2 p {
+    margin: 1vw;
+    /* padding: 0px; */
+}
+
+
+
+
+@media screen and (min-width: 320px) and (max-width:410px) {
+    .ProfileMoviesBooked-subContainer2 {
+        font-size: .7rem;
+    }
+
+    .ProfileMoviesBooked-Container {
+        margin:1vw;
+        padding: .5rem;
+        border-radius: 1rem;
+    }
+
+    .subCotainerProfile2 {
+        width: 5rem;
+    }
+
+    .ProfileMoviesBooked-subContainer1 {
+        object-fit: cover;
+        height: 10rem;
+        margin: .3rem;
+    }
+}
