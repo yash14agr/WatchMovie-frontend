@@ -10,7 +10,9 @@ import Profile from "./Component/Profile/Profile.js";
 import './App.css';
 
 function App() {
+  const [isQuerySearched, setIsQuerySearched] = useState(false)
   const [movieData, SetMovieData] = useState();
+  const [filteredMovieData, SetFilteredMovieData] = useState(movieData);
   const [isMovieBooked, setIsMovieBooked] = useState(0)
   const [userData, setUserData] = useState({
     Name: "",
@@ -43,12 +45,12 @@ function App() {
     <>
       <BrowserRouter>
         {/* <HashRouter> */}
-        <Nav userData={userData} />
+        <Nav setIsQuerySearched={setIsQuerySearched} userData={userData} movieData={movieData} SetMovieData={SetMovieData} SetFilteredMovieData={SetFilteredMovieData} filteredMovieData={filteredMovieData} />
         <Routes>
-          <Route exact path="/" element={<Home movieData={movieData} />} />
-          <Route path="/details" element={<ShowsDetail userData={userData} setIsMovieBooked={setIsMovieBooked} isMovieBooked={isMovieBooked}/>} />
+          <Route exact path="/" element={<Home setIsQuerySearched={setIsQuerySearched} isQuerySearched={isQuerySearched} movieData={movieData} SetFilteredMovieData={SetFilteredMovieData} filteredMovieData={filteredMovieData} />} />
+          <Route path="/details" element={<ShowsDetail userData={userData} setIsMovieBooked={setIsMovieBooked} isMovieBooked={isMovieBooked} />} />
           <Route path="/Login" element={<Login updateUserData={updateUserData} />} />
-          <Route path="/SignIn" element={<SignIn updateUserData={updateUserData} />} />
+          <Route path="/SignUp" element={<SignIn updateUserData={updateUserData} />} />
           <Route path="/Profile" element={<Profile userData={userData} updateUserData={updateUserData} isMovieBooked={isMovieBooked} />} />
           {/* <Route path="/SeatBooked" element={<TicketSubmit  />} /> */}
         </Routes>

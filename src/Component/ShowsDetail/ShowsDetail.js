@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
@@ -79,7 +79,7 @@ function ShowsDetail({ userData, setIsMovieBooked, isMovieBooked }) {
 
   const handleBookClick = () => {
     if (userData.Name === "") {
-      alert("Please Login/signIn first");
+      alert("Please Login/SignUp first");
       try {
         navigate('/Login');
       }

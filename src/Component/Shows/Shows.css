@@ -1,13 +1,15 @@
 .show {
-    /* border: 2px solid blue; */
     background-color: black;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
-    /* align-items: center; */
     color: grey;
 
+}
+
+.showLink {
+    /* margin: .3rem; */
 }
 
 .item-container {
@@ -15,7 +17,8 @@
     border-radius: 2vw;
     padding: .3rem;
     margin: 10px;
-    box-shadow: 2px 2px 10px rgb(255, 255, 255);
+    /* box-shadow: 2px 2px 10px rgb(255, 255, 255); */
+    box-shadow: 5px 4px 6px rgba(255, 255, 255, 0.283);
 }
 
 
@@ -36,10 +39,12 @@
 }
 
 
-
 .show-txt {
+    text-decoration: none;
     font-size: 1rem;
     margin: 0 5px;
+    color: white;
+    border-bottom: none;
 
 }
 

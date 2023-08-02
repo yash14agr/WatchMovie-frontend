@@ -16,7 +16,7 @@
     border-radius: 10px;
     backdrop-filter: blur(10px);
     width: 20%;
-    min-width: 10rem;
+    min-width: 14rem;
     border: 2px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 0 10px rgba(150, 148, 154, 0.6);
     padding: 15px 15px;
@@ -42,8 +42,8 @@
 .checkValidation {
     color: red;
     font-size: small;
-    margin-bottom: 1px;
-
+    margin: 0 0 1px 10px;
+    align-self: flex-start;
 }
 
 .input-tag::placeholder {
@@ -144,5 +144,9 @@
     .google:hover {
         font-size: .9rem;
         color: #e5e5e56e;
+    }
+
+    .checkValidation {
+        font-size: .8rem;
     }
 }

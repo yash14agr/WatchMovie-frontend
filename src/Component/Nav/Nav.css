@@ -24,6 +24,7 @@
     align-items: center;
     justify-content: center;
     width: 15%;
+    cursor: pointer;
 
 }
 
@@ -108,7 +109,7 @@ button:hover {
 @media screen and (min-width: 320px) and (max-width:768px) {
 
     .nav-container {
-        font-size: .7rem;
+        font-size: .8rem;
     }
 
     #logo {
@@ -126,7 +127,7 @@ button:hover {
 
     .nav-logo span {
         font-weight: 400;
-        font-size: .7rem;
+        font-size: .8rem;
     }
 
 

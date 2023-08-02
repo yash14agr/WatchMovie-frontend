@@ -37,7 +37,7 @@ function BookTicketDetails({ item, handleBookClick, formData, handleInputChange,
                     <div><span>Summary:</span> {UpdatedSummary}</div>
                     <p id='book-ticket-container'>
                         <span><label name="TotalSeat">Total Seat : </label>
-                            <input type="number" name="TotalSeat" min="5" max="50" step="1" value={formData.TotalSeat || ""} onChange={handleInputChange}></input></span>
+                            <input type="number" name="TotalSeat" min="1" max="50" step="1" value={formData.TotalSeat || ""} onChange={handleInputChange}></input></span>
 
                         <Link to="/details" onClick={handleBookClick} state={item} className='show-details ShowLink'>
                             Book Ticket

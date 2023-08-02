@@ -15,7 +15,7 @@
     box-shadow: 0 0 10px rgba(150, 148, 154, 0.6);
     padding: 15px 15px;
     width: 20%;
-    min-width: 12rem;
+    min-width: 14rem;
 }
 
 .login-form * {
@@ -40,6 +40,11 @@
     cursor: pointer;
 }
 
+.btn-login:hover {
+    color: black;
+    font-size: 1rem;
+}
+
 .google {
     background-color: rgba(255, 255, 255, 0.27);
     color: #e5e5e5;
@@ -58,7 +63,7 @@
     color: #e5e5e5;
     margin: 5px;
     margin-top: 20px;
-    font-size: 1rem;
+    font-size: .9rem;
 }
 
 .success-msg {

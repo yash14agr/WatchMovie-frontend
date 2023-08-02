@@ -4,14 +4,23 @@ import './Home.css';
 import Shows from "../Shows/Shows.js";
 
 
-function Home({ movieData }) {
-  // console.log(movieData)
+function Home({ setIsQuerySearched, isQuerySearched, movieData, SetFilteredMovieData, filteredMovieData }) {
+  var validMovieData;
+  if (isQuerySearched) {
+    validMovieData = filteredMovieData
+  }
+  else {
+    validMovieData = movieData
+  }
+
   return (
     <>
       {/* <Nav /> */}
       <div className='MainContiner'>
 
-        <Shows movieData={movieData} />
+        {/* <Shows movieData={movieData} /> */}
+
+        <Shows movieData={validMovieData} />
       </div>
     </>
   )
